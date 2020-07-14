@@ -1,0 +1,23 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__.'/vendor/autoload.php';
+
+use crushlivepoker\transcoder\app\Transcoder;
+
+// Load dotenv?
+$dotEnvPath = realpath(__DIR__.'/..');
+if (file_exists($dotEnvPath.'/.env'))
+{
+	(new \Dotenv\Dotenv($dotEnvPath))->load();
+}
+else
+{
+    exit("Can't load environment file." . PHP_EOL);
+}
+
+$app = new Transcoder();
+
+// Away we go!
+
+$app->run();

@@ -1,0 +1,4 @@
+vendor/
+
+# Allow server to have different versions of Symfony components from dev
+composer.lock

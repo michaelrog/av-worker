@@ -1,0 +1,23 @@
+{
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/michaelrog/terminal"
+		}
+	],
+	"require": {
+		"monolog/monolog": "^1.0",
+		"rollbar/rollbar": "^2.0",
+		"symfony/console": "4.4.2",
+		"vlucas/phpdotenv": "^2.5",
+		"titasgailius/terminal": "^0.3.0",
+		"symfony/lock": "4.4.0",
+		"symfony/mailer": "^4.4",
+		"vimeo/vimeo-api": "^3.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"crushlivepoker\\transcoder\\": "src/"
+		}
+	}
+}
